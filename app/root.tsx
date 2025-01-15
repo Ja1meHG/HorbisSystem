@@ -3,15 +3,36 @@ import {
   Scripts,
   ScrollRestoration,
   isRouteErrorResponse,
+  Outlet,
+  NavLink,
+  useNavigation,
 } from "react-router";
+
 import type { Route } from "./+types/root";
+
 
 import appStylesHref from "./app.css?url";
 
 export default function App() {
+  const navigation = useNavigation();
+  console.log("Navigation state:", navigation.state);
+
+  const contact = {
+    first: "Your",
+    last: "Name",
+    avatar:
+      "https://horbismex.com/wp-content/uploads/2024/08/logo_black.png",
+    twitter: "your_handle",
+    notes: "Some notes",
+    favorite: true,
+  };
+
   return (
     <>
       <div id="sidebar">
+        <div id="img-holder" >
+          <img key={contact.avatar} src={contact.avatar} />
+        </div>
         <h1>React Router Contacts</h1>
         <div>
           <Form id="search-form" role="search">
@@ -31,15 +52,54 @@ export default function App() {
         <nav>
           <ul>
             <li>
-              <a href={`/contacts/1`}>Your Name</a>
+              <NavLink
+                className={({ isActive, isPending }) =>
+                  isActive ? "active" : isPending ? "pending" : ""
+                }
+                to={`/Dashboard/1`}
+              >
+                Dashboard
+              </NavLink>
             </li>
             <li>
-              <a href={`/contacts/2`}>Your Friend</a>
+              <NavLink
+                className={({ isActive, isPending }) =>
+                  isActive ? "active" : isPending ? "pending" : ""
+                }
+                to={`/catalogos/1`}
+              >
+                Catalogos
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className={({ isActive, isPending }) =>
+                  isActive ? "active" : isPending ? "pending" : ""
+                }
+                to={`/recibosNomina/1`}
+              >
+                Nomina
+              </NavLink>
             </li>
           </ul>
         </nav>
       </div>
+      <div
+        className={navigation.state === "loading" ? "loading" : ""}
+        id="detail"
+      >
+        <Outlet />
+      </div>
     </>
+  );
+}
+
+export function HydrateFallback() {
+  return (
+    <div id="loading-splash">
+      <div id="loading-splash-spinner" />
+      <p>Loading, please wait...</p>
+    </div>
   );
 }
 
