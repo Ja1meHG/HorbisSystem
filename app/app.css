@@ -187,6 +187,114 @@ body {
   object-position: center;
 }
 
+#Personal_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -40px; /* Ajusta hacia arriba */
+  left: 15%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  object-position: center;
+  border-radius: 15px;
+  background-color: rgb(165, 255, 255);
+}
+
+#Personal_icon_container{
+ position: relative;
+}
+
+#Personal_icon2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -40px; /* Ajusta hacia arriba */
+  left: 15%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  object-position: center;
+  border-radius: 15px;
+  background-color: rgb(116, 255, 126);
+}
+
+#Personal_icon3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -40px; /* Ajusta hacia arriba */
+  left: 15%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  object-position: center;
+  border-radius: 15px;
+  background-color: rgb(255, 38, 38);
+}
+
+#Personal_icon4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -40px; /* Ajusta hacia arriba */
+  left: 15%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  object-position: center;
+  border-radius: 15px;
+  background-color: rgb(146, 167, 147);
+}
+
+#Typography_container{
+  padding: 0;
+  text-align: right;
+  
+}
+
+hr {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #e3e3e3;
+}
+
+#Palta_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 30%;
+  max-height: 30%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  object-position: center;
+  border-radius: 15px;
+  background-color: rgb(139, 255, 128);
+}
+
+#Pbaja_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 30%;
+  max-height: 30%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  object-position: center;
+  border-radius: 15px;
+  background-color: rgb(255, 109, 109);
+}
+
 #search-spinner {
   width: 1rem;
   height: 1rem;
@@ -282,6 +390,7 @@ i {
   flex: 1;
   padding: 2rem 4rem;
   width: 100%;
+  background-color: #f1f1f1;
 }
 
 #detail.loading {

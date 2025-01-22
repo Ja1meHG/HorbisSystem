@@ -6,4 +6,5 @@ export default [
     route("catalogos/:catalogosId", "routes/catalogos.tsx"),
     route("recibosNomina/:recibosNominaId", "routes/recibosNomina.tsx"),
     route("Dashboard/:DashboardId", "routes/Dashboard.tsx"),
+    route("DashboardContent/:PieChartId", "routes/DashboardContent/PieChart.tsx"),
 ] satisfies RouteConfig;

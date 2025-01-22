@@ -32,7 +32,7 @@ export default function App() {
       <div id="sidebar">
         <div id="img-holder" >
           <img key={contact.avatar} src={contact.avatar} />
-        </div>
+        </div>  
         <h1>React Router Contacts</h1>
         <div>
           <Form id="search-form" role="search">
