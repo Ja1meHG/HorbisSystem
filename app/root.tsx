@@ -76,9 +76,9 @@ export default function App() {
                 className={({ isActive, isPending }) =>
                   isActive ? "active" : isPending ? "pending" : ""
                 }
-                to={`/recibosNomina/1`}
+                to={`/EvaluacionDesempeno/1`}
               >
-                Nomina
+                Evaluacion de Desempeño
               </NavLink>
             </li>
           </ul>

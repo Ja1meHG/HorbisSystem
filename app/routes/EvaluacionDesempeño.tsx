@@ -1,4 +1,4 @@
-export default function recibosNomina() {
+export default function EvaluacionDesempeño() {
     return (
       <p>
         Aqui se visualizaran los recibos de nomina
