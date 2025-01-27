@@ -15,6 +15,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#EvContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#EvTitle{
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+hr {
+  width: 50%;
+  border: none;
+  height: 1.5px;
+  background-color: #751e9e;
+  
+}
+
+#LineCard{
+  height: 2px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

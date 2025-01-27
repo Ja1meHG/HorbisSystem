@@ -45,7 +45,7 @@ export default function Dashboard() {
               </Typography>
             </div>
           </CardContent>
-          <hr></hr>
+          <div id="LineCard" style={{ display: 'flex', justifyContent: 'flex-end' }}><hr></hr></div>
           <CardActions>
             <Button size="small">Ver más</Button>
           </CardActions>
@@ -77,7 +77,7 @@ export default function Dashboard() {
               </Typography>
             </div>
           </CardContent>
-          <hr></hr>
+          <div id="LineCard" style={{ display: 'flex', justifyContent: 'flex-end' }}><hr></hr></div>
           <CardActions>
             <Button size="small">Ver más</Button>
           </CardActions>
@@ -109,7 +109,7 @@ export default function Dashboard() {
               </Typography>
             </div>
           </CardContent>
-          <hr></hr>
+          <div id="LineCard" style={{ display: 'flex', justifyContent: 'flex-end' }}><hr></hr></div>
           <CardActions>
             <Button size="small">Ver más</Button>
           </CardActions>
@@ -141,7 +141,7 @@ export default function Dashboard() {
               </Typography>
             </div>
           </CardContent>
-          <hr></hr>
+          <div id="LineCard" style={{ display: 'flex', justifyContent: 'flex-end' }}><hr/></div>
           <CardActions>
             <Button size="small">Ver más</Button>
           </CardActions>
